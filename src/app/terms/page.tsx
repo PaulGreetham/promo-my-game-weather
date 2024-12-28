@@ -6,7 +6,7 @@ export default function Terms() {
       <HamburgerMenu />
       <div />
       <main className="flex flex-col gap-8 items-center w-full max-w-3xl mx-auto">
-        <h1 className="text-4xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">Terms & Conditions</h1>
+        <h1 className="text-4xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">Terms &amp; Conditions</h1>
         <div className="w-full space-y-6 px-4 text-white">
           <div>
             <h2 className="text-xl font-[family-name:var(--font-bebas-neue)] mb-2">1. Terms of Use</h2>

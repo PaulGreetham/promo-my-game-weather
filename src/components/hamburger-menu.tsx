@@ -32,7 +32,7 @@ export function HamburgerMenu() {
             FAQs
           </Link>
           <Link href="/terms" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
-            T&Cs
+            T&amp;Cs
           </Link>
           <Link href="/contact" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
             Contact
