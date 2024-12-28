@@ -57,7 +57,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		backgroundImage: {
-  			'main': "url('/backgroundimage.jpg')",
+  			'main': "url('/elio-santos-kEL2_9L9QXM-unsplash.jpg')",
   		},
   	}
   },

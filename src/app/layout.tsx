@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bebasNeue.variable} antialiased bg-main bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#098D48] before:to-[#098D48]/70 before:z-[-1] relative`}
+        className={`${bebasNeue.variable} antialiased bg-main bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90 before:z-[-1] relative`}
       >
         {children}
       </body>
