@@ -2,8 +2,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center w-full">
+    <div className="h-[100dvh] grid grid-rows-[1fr_auto_1fr] items-center justify-items-center p-4 sm:p-20">
+      <div />
+      <main className="flex flex-col gap-6 items-center w-full">
         <h1 className="text-4xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">My Game Weather</h1>
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
           <a 
@@ -40,6 +41,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <div />
     </div>
   );
 }
