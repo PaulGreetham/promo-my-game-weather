@@ -6,6 +6,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/ui/sheet"
+import Link from "next/link"
 
 export function HamburgerMenu() {
   return (
@@ -21,11 +22,21 @@ export function HamburgerMenu() {
         </SheetClose>
         <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
         <nav className="flex flex-col gap-8 mt-16">
-          <a href="#" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">Home</a>
-          <a href="#" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">About</a>
-          <a href="#" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">FAQs</a>
-          <a href="#" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">T&Cs</a>
-          <a href="#" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">Contact</a>
+          <Link href="/" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
+            Home
+          </Link>
+          <Link href="/about" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
+            About
+          </Link>
+          <Link href="/faqs" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
+            FAQs
+          </Link>
+          <Link href="/terms" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
+            T&Cs
+          </Link>
+          <Link href="/contact" className="text-5xl sm:text-3xl text-white hover:text-gray-300 transition-colors text-center font-[family-name:var(--font-bebas-neue)]">
+            Contact
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>
