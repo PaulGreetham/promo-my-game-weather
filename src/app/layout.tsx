@@ -10,7 +10,7 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "My Game Weather",
-  description: "Promotional website for My Game Weather",
+  description: "Promotional website for My Game Weather app",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bebasNeue.variable} antialiased bg-main bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-[#098D48] before:opacity-80 before:z-[-1] relative`}
+        className={`${bebasNeue.variable} antialiased bg-main bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#098D48] before:to-[#098D48]/70 before:z-[-1] relative`}
       >
         {children}
       </body>

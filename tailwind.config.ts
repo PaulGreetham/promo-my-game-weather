@@ -57,7 +57,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		backgroundImage: {
-  			'main': "url('/background.jpg')",
+  			'main': "url('/backgroundimage.jpg')",
   		},
   	}
   },
