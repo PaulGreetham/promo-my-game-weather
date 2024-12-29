@@ -20,17 +20,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${bebasNeue.variable} antialiased`}
-      >
-        <div className="fixed inset-0 bg-main bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90" />
-        <div className="relative min-h-screen">
+    <html lang="en" className="h-full">
+      <body className={`${bebasNeue.variable} antialiased h-full`}>
+        {/* Fixed background */}
+        <div className="fixed inset-0 w-full h-full bg-main bg-cover bg-center before:content-[''] before:fixed before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90 before:z-[1]" />
+        
+        {/* Fixed navbar */}
+        <div className="fixed top-0 left-0 right-0 z-[3]">
           <Navbar />
-          <div className="pt-48">
+        </div>
+        
+        {/* Scrollable content */}
+        <main className="relative z-[2] h-full overflow-y-auto">
+          <div className="py-48">
             {children}
           </div>
-        </div>
+        </main>
       </body>
     </html>
   );

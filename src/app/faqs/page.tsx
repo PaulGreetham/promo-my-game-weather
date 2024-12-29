@@ -84,6 +84,24 @@ export default function FAQs() {
                   [Content to be added about unique features and benefits]
                 </AccordionContent>
               </AccordionItem>
+
+              <AccordionItem value="item-7" className="border-b border-white/20">
+                <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
+                  How far in advance can I check the forecast?
+                </AccordionTrigger>
+                <AccordionContent className="text-sm sm:text-base text-gray-300">
+                  [Content to be added about forecast timeframes and accuracy]
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-8" className="border-none">
+                <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
+                  How safe is my personal information?
+                </AccordionTrigger>
+                <AccordionContent className="text-sm sm:text-base text-gray-300">
+                  [Content to be added about unique features and benefits]
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>

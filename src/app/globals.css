@@ -4,12 +4,23 @@
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overflow-y-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overflow-y-auto {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 @layer base {
