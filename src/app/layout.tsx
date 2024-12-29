@@ -22,11 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bebasNeue.variable} antialiased min-h-screen bg-main bg-cover bg-center bg-fixed before:content-[''] before:fixed before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90 before:z-[-1]`}
+        className={`${bebasNeue.variable} antialiased`}
       >
-        <Navbar />
-        <div className="pt-48 min-h-screen">
-          {children}
+        <div className="fixed inset-0 bg-main bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90" />
+        <div className="relative min-h-screen">
+          <Navbar />
+          <div className="pt-48">
+            {children}
+          </div>
         </div>
       </body>
     </html>
