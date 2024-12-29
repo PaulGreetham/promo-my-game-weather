@@ -7,7 +7,7 @@ import {
 
 export default function FAQs() {
   return (
-    <div className="min-h-[100dvh] grid grid-rows-[auto_1fr] items-start justify-items-center p-4 pt-20 sm:p-20">
+    <div className="container mx-auto px-4">
       <main className="flex flex-col gap-6 sm:gap-8 items-center w-full max-w-3xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">FAQs</h1>
         <div className="w-full px-0 sm:px-4">
