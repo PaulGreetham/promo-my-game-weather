@@ -26,16 +26,16 @@ export default function RootLayout({
         <div className="fixed inset-0 w-full h-full bg-main bg-cover bg-center before:content-[''] before:fixed before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90 before:z-[1]" />
         
         {/* Fixed navbar */}
-        <div className="fixed top-0 left-0 right-0 z-[3]">
+        <div className="fixed top-0 left-0 right-0 z-[3] bg-[#098D48]">
           <Navbar />
         </div>
         
-        {/* Scrollable content */}
-        <main className="relative z-[2] h-full overflow-y-auto">
-          <div className="py-48">
+        {/* Scrollable content with padding for navbar */}
+        <div className="relative z-[2] h-full overflow-y-auto">
+          <div className="mt-[72px] px-4 pt-48 pb-12">
             {children}
           </div>
-        </main>
+        </div>
       </body>
     </html>
   );

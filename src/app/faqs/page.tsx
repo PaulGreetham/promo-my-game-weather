@@ -7,10 +7,10 @@ import {
 
 export default function FAQs() {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto">
       <main className="flex flex-col gap-6 sm:gap-8 items-center w-full max-w-3xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">FAQs</h1>
-        <div className="w-full px-0 sm:px-4">
+        <div className="w-full">
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-4 sm:p-6">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-b border-white/20">
@@ -76,7 +76,7 @@ export default function FAQs() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-8" className="border-none">
+              <AccordionItem value="item-8" className="border-b border-white/20">
                 <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
                   How safe is my personal information?
                 </AccordionTrigger>
@@ -85,21 +85,39 @@ export default function FAQs() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-7" className="border-b border-white/20">
+              <AccordionItem value="item-9" className="border-b border-white/20">
                 <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
-                  How far in advance can I check the forecast?
+                  Can I share weather updates with friends?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm sm:text-base text-gray-300">
-                  [Content to be added about forecast timeframes and accuracy]
+                  [Content to be added about social sharing features]
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-8" className="border-none">
+              <AccordionItem value="item-10" className="border-b border-white/20">
                 <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
-                  How safe is my personal information?
+                  Is there a desktop version available?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm sm:text-base text-gray-300">
-                  [Content to be added about unique features and benefits]
+                  [Content to be added about platform availability]
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-11" className="border-b border-white/20">
+                <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
+                  What happens if my venue isn&apos;t listed?
+                </AccordionTrigger>
+                <AccordionContent className="text-sm sm:text-base text-gray-300">
+                  [Content to be added about venue requests and updates]
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-12" className="border-none">
+                <AccordionTrigger className="text-lg sm:text-xl font-[family-name:var(--font-bebas-neue)] text-white hover:text-white/80">
+                  How do I report a problem with the app?
+                </AccordionTrigger>
+                <AccordionContent className="text-sm sm:text-base text-gray-300">
+                  [Content to be added about customer support and bug reporting]
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
