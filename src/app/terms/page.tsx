@@ -1,9 +1,6 @@
-import { HamburgerMenu } from '@/components/hamburger-menu';
-
 export default function Terms() {
   return (
     <div className="h-[100dvh] grid grid-rows-[1fr_auto_1fr] items-center justify-items-center p-4 sm:p-20">
-      <HamburgerMenu />
       <div />
       <main className="flex flex-col gap-8 items-center w-full max-w-3xl mx-auto">
         <h1 className="text-4xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">Terms &amp; Conditions</h1>
