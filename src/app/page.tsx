@@ -18,11 +18,17 @@ const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 sm:px-48">
-      <main className="flex flex-col gap-6 items-center w-full">
-        <h1 className="text-4xl font-normal text-white font-[family-name:var(--font-bebas-neue)]">
-          My Game Weather
-        </h1>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-[1000px] mx-auto px-4 flex flex-col items-center justify-center gap-12">
+        <div className="flex flex-col items-center text-center gap-4 sm:gap-8">
+          <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight">
+            My Game Weather
+          </h1>
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight max-w-[900px]">
+            The most advanced football weather app ever created
+          </h2>
+        </div>
+        
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
           {/* Apple Store Button */}
           <a
@@ -72,7 +78,7 @@ export default function Home() {
             </ShinyButton>
           </a>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

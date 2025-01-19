@@ -18,7 +18,7 @@ export function HamburgerMenu() {
           <Menu className="h-10 w-10" />
         </button>
       </SheetTrigger>
-      <SheetContent className="bg-black/95 border-l-0 w-full sm:max-w-full">
+      <SheetContent className="bg-black/95 border-l-0 w-full sm:w-[400px] lg:w-[500px]">
         <SheetClose className="absolute right-6 top-6 text-white hover:opacity-80 transition-opacity">
           <X className="h-10 w-10" />
         </SheetClose>

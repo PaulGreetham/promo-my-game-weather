@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${bebasNeue.variable} antialiased h-full`}>
+      <body className={`${bebasNeue.variable} antialiased h-full overflow-hidden`}>
         {/* Fixed background */}
         <div className="fixed inset-0 w-full h-full bg-[#098D48]">
           <DotPattern 
@@ -40,12 +40,10 @@ export default function RootLayout({
           <Navbar />
         </div>
         
-        {/* Scrollable content with padding for navbar */}
-        <div className="relative z-[2] h-full overflow-y-auto">
-          <div className="mt-[72px] px-4 pt-48 pb-12">
-            {children}
-          </div>
-        </div>
+        {/* Main content */}
+        <main className="relative z-[2] h-full flex items-center justify-center">
+          {children}
+        </main>
       </body>
     </html>
   );
