@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { DotPattern } from "@/components/ui/dot-pattern";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -23,10 +24,19 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${bebasNeue.variable} antialiased h-full`}>
         {/* Fixed background */}
-        <div className="fixed inset-0 w-full h-full bg-main bg-cover bg-center before:content-[''] before:fixed before:inset-0 before:bg-gradient-to-br before:from-[#098D48]/95 before:to-[#098D48]/90 before:z-[1]" />
+        <div className="fixed inset-0 w-full h-full bg-[#098D48]">
+          <DotPattern 
+            width={32} 
+            height={32} 
+            cx={2} 
+            cy={2} 
+            cr={1} 
+            className="opacity-20 fill-white [mask-image:radial-gradient(100%_100%_at_center,white,transparent)]"
+          />
+        </div>
         
         {/* Fixed navbar */}
-        <div className="fixed top-0 left-0 right-0 z-[3] bg-[#098D48]">
+        <div className="fixed top-0 left-0 right-0 z-[3]">
           <Navbar />
         </div>
         
