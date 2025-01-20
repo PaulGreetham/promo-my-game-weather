@@ -46,7 +46,7 @@ export default function RootLayout({
           </div>
           
           {/* Main content */}
-          <main className="relative z-[2] min-h-screen pt-[72px]">
+          <main className="relative z-[2] min-h-screen">
             {children}
           </main>
         </ThemeProvider>
