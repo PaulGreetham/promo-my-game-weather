@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ShinyButton } from "@/components/ui/shiny-button";
+import { ShinyButton } from "@/components/magicui/shiny-button";
 import type { AnimationProps } from "framer-motion";
 import { TextRevealByWord } from "@/components/magicui/text-reveal-by-word";
 
