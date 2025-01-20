@@ -5,7 +5,7 @@ import { ModeToggle } from "./mode-toggle"
 
 export function Navbar() {
   return (
-    <div className="w-full flex justify-between items-center bg-transparent">
+    <div className="w-full flex justify-between items-center bg-[#006600] dark:bg-[#111111]">
       <div className="text-4xl text-white font-[family-name:var(--font-bebas-neue)] p-4">
         My Game Weather
       </div>
