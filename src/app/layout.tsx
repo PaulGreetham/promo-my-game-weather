@@ -31,7 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* Fixed background */}
-          <div className="fixed inset-0 w-full h-full bg-[#098D48] dark:bg-[#1a1c1a]">
+          <div className="fixed inset-0 w-full h-full bg-[#008000] dark:bg-[#1a1c1a]">
             <DotPattern 
               width={32} 
               height={32} 
