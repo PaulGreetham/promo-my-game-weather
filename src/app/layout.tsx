@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
-import { DotPattern } from "@/components/ui/dot-pattern";
+import { DotPattern } from "@/components/magicui/dot-pattern";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const bebasNeue = Bebas_Neue({
@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
-      <body className={`${bebasNeue.variable} antialiased h-full overflow-hidden`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${bebasNeue.variable} antialiased min-h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -48,7 +48,7 @@ export default function RootLayout({
           </div>
           
           {/* Main content */}
-          <main className="relative z-[2] h-full flex items-center justify-center">
+          <main className="relative z-[2] min-h-screen">
             {children}
           </main>
         </ThemeProvider>
