@@ -42,37 +42,37 @@ export default function ContactForm() {
   return (
     <form onSubmit={onSubmit} className="w-full max-w-md mx-auto space-y-6">
       <div className="space-y-2">
-        <label className="block text-white text-sm font-medium">
+        <label className="block text-white text-xl font-[family-name:var(--font-bebas-neue)] tracking-tight">
           Name
           <input
             type="text"
             name="name"
             required
-            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50 font-sans text-base"
           />
         </label>
       </div>
 
       <div className="space-y-2">
-        <label className="block text-white text-sm font-medium">
+        <label className="block text-white text-xl font-[family-name:var(--font-bebas-neue)] tracking-tight">
           Email
           <input
             type="email"
             name="email"
             required
-            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50 font-sans text-base"
           />
         </label>
       </div>
 
       <div className="space-y-2">
-        <label className="block text-white text-sm font-medium">
+        <label className="block text-white text-xl font-[family-name:var(--font-bebas-neue)] tracking-tight">
           Message
           <textarea
             name="message"
             required
             rows={4}
-            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="mt-1 block w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white/50 font-sans text-base"
           />
         </label>
       </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
         disabled={loading}
         type="submit"
         className={cn(
-          "w-full rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white",
+          "inline-flex items-center justify-center rounded-md text-xl px-4 py-2 font-[family-name:var(--font-bebas-neue)] tracking-tight bg-white/10 text-white hover:bg-white/20 dark:hover:bg-white/20 border border-white/20",
           loading && "opacity-50 cursor-not-allowed"
         )}
       >
@@ -89,7 +89,7 @@ export default function ContactForm() {
       </button>
 
       {successMessage && (
-        <p className="text-green-400 text-center font-medium">{successMessage}</p>
+        <p className="text-green-400 text-center text-xl font-[family-name:var(--font-bebas-neue)] tracking-tight">{successMessage}</p>
       )}
     </form>
   )
