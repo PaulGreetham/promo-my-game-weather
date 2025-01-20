@@ -11,9 +11,9 @@ export default function ContactPage() {
             <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight">
               Contact Us
             </h1>
-            <p className="mx-auto max-w-[700px] text-white/80 text-xl md:text-2xl font-[family-name:var(--font-bebas-neue)] tracking-tight">
+            <h2 className="text-4xl max-w-[700px] text-white/80 text-xl md:text-4xl font-[family-name:var(--font-bebas-neue)] tracking-tight">
               Have a question or feedback? We&apos;d love to hear from you.
-            </p>
+            </h2>
           </div>
           <div className="w-full max-w-md">
             <ContactForm />
