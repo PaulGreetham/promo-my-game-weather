@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ShinyButton } from "@/components/magicui/shiny-button";
 import type { AnimationProps } from "framer-motion";
 import { TextRevealByWord } from "@/components/magicui/text-reveal-by-word";
+import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
 const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
   initial: { "--x": "100%" },
@@ -16,6 +17,17 @@ const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
     delay: delay,
   },
 });
+
+export function Iphone15ProDemo() {
+  return (
+    <div className="relative w-[100px] md:w-[166px]">
+      <Iphone15Pro
+        src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.30.33.png"  // Ensure this path is correct and the image is in the public folder
+        className="w-full h-auto"
+      />
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -32,6 +44,8 @@ export default function Home() {
             </h2>
           </div>
           
+          <Iphone15ProDemo />
+
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
             {/* Apple Store Button */}
             <a

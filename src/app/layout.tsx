@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${bebasNeue.variable} antialiased min-h-screen bg-[#004700] dark:bg-[#111111]`}>
+      <body className={`${bebasNeue.variable} antialiased min-h-screen bg-[#048E49] dark:bg-[#111111]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
