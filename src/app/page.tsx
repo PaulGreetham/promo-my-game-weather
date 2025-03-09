@@ -19,9 +19,17 @@ const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
 
 function Iphone15ProDemo() {
   return (
-    <div className="relative w-[100px] md:w-[200px]">
+    <div className="relative flex w-[100px] md:w-[600px] gap-4">
       <Iphone15Pro
-        src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.30.33.png"  // Ensure this path is correct and the image is in the public folder
+        src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.30.18.png"
+        className="w-full h-auto"
+      />
+      <Iphone15Pro
+        src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.30.33.png"
+        className="w-full h-auto"
+      />
+      <Iphone15Pro
+        src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.31.22.png"
         className="w-full h-auto"
       />
     </div>
@@ -94,8 +102,6 @@ export default function Home() {
 
         {/* Right Section: Images */}
         <div className="flex items-center justify-center md:w-1/2 gap-8">
-          <Iphone15ProDemo />
-          <Iphone15ProDemo />
           <Iphone15ProDemo />
         </div>
       </div>
