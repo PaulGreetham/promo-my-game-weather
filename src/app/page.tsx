@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { ShinyButton } from "@/components/magicui/shiny-button";
 import type { AnimationProps } from "framer-motion";
-import { TextRevealByWord } from "@/components/magicui/text-reveal-by-word";
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
 const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
@@ -18,9 +17,9 @@ const buttonAnimation = (delay: number): Partial<AnimationProps> => ({
   },
 });
 
-export function Iphone15ProDemo() {
+function Iphone15ProDemo() {
   return (
-    <div className="relative w-[100px] md:w-[166px]">
+    <div className="relative w-[100px] md:w-[200px]">
       <Iphone15Pro
         src="/Simulator Screenshot - iPhone 16 Pro - 2025-03-05 at 12.30.33.png"  // Ensure this path is correct and the image is in the public folder
         className="w-full h-auto"
@@ -31,22 +30,18 @@ export function Iphone15ProDemo() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="h-screen flex items-center justify-center">
-        <div className="w-full max-w-[1000px] mx-auto px-4 flex flex-col items-center justify-center gap-12">
-          <div className="flex flex-col items-center text-center gap-4 sm:gap-8">
-            <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight">
-              My Game Weather
-            </h1>
-            <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight max-w-[900px]">
-              The most advanced football weather app ever created
-            </h2>
-          </div>
-          
-          <Iphone15ProDemo />
-
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-start justify-between gap-12">
+        
+        {/* Left Section: Text and Buttons */}
+        <div className="flex flex-col items-start text-left gap-4 sm:gap-8 md:w-1/2">
+          <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight">
+            My Game Weather
+          </h1>
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white font-[family-name:var(--font-bebas-neue)] tracking-tight max-w-[900px]">
+            The most advanced football weather app ever created
+          </h2>
+          <div className="flex gap-4 items-start justify-start w-full mt-8">
             {/* Apple Store Button */}
             <a
               href="https://apps.apple.com/your-app-link-here"
@@ -96,12 +91,14 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
 
-      {/* Text Reveal Section */}
-      <TextRevealByWord 
-        text="Stay ahead of the game with real-time weather updates, precise forecasts, and detailed analytics for every football venue. Whether you're a player, coach, or fan, make informed decisions with the most comprehensive weather data at your fingertips."
-      />
+        {/* Right Section: Images */}
+        <div className="flex items-center justify-center md:w-1/2 gap-8">
+          <Iphone15ProDemo />
+          <Iphone15ProDemo />
+          <Iphone15ProDemo />
+        </div>
+      </div>
     </div>
   );
 }
