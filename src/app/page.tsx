@@ -52,7 +52,7 @@ export default function Home() {
           <div className="flex gap-4 items-start justify-start w-full mt-8">
             {/* Apple Store Button */}
             <a
-              href="https://apps.apple.com/your-app-link-here"
+              href="https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB"
               target="_blank"
               rel="noopener noreferrer"
               className="w-[164px] h-[72px] transition-all duration-200"
